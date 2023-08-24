@@ -18,7 +18,8 @@
   #Container {
     margin: auto;
     padding-bottom: 20px;
-    width: 470px;
+    /* width: 470px; */
+    width: 800px;
     background: white;
     box-shadow: 0px 0px 10px rgb(71, 71, 71);
   }
@@ -34,7 +35,8 @@
 
   input {
     margin-left: 40px;
-    width: 300px;
+    /* width: 300px; */
+    width: 600px;
     height: 30px;
     background-color: rgb(243, 240, 240);
     border: 2px solid rgb(3, 3, 158);
@@ -45,7 +47,8 @@
 
   #greetingContainer {
     margin-top: 2px;
-    width: 292px;
+    /* width: 292px; */
+    width: 600px;
     min-height: 400px;
     position: relative;
     right: 23px;
@@ -59,6 +62,38 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
   }
+
+
+
+
+
+  /********** Large devices only **********/
+  @media (min-width: 1200px) {}
+
+  /********** Medium devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #Container {
+      width: 800px;
+    }
+
+    input {
+      width: 600px;
+    }
+
+    #greetingContainer {
+      width: 600px;
+    }
+  }
+
+  /********** Small devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {}
+
+  /********** Extra small devices only **********/
+  @media (max-width: 767px) {}
+
+
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  @media (max-width: 479px) {}
 </style>
 
 <body>
